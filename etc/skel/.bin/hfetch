@@ -877,12 +877,24 @@ f2=$'\e[0;37m'
 
 
 cat << EOF
+
 ${c01}▉▉  | ${f1}System ${c08}....... $f1$system
-${c03}  ▉▉| ${f1}WM ${c08}........... $f1$wmname
-${c11}▉▉  | ${f1}Shell ${c08}........ $f1$(get_shell)
-${c17}  ▉▉| ${f1}Terminal ${c08}..... $f1$term
-${c17}▉▉  | ${f1}Kernel ${c08}....... $f1$(get_kernel)
-${c01}  ▉▉| ${f1}Disk ${c08}......... $f1$(get_disk)
-${c06}▉▉  | ${f1}Processor ${c08}.... $f1$(get_cpu)
-${c06}  ▉▉| ${f1}Gpu ${c08}.......... $f1$(get_gpu)
+${c09}  ▉▉| ${f1}Packages ${c08}..... $f1$(get_packages)
+${c07}▉▉  | ${f1}Uptime  ${c08}...... $f1$(get_uptime)
+${c15}  ▉▉| ${f1}Resolution  ${c08}.. $f1$res
+${c02}▉▉  |
+${c10}  ▉▉| ${f1}WM ${c08}........... $f1$wmname
+${c03}▉▉  | ${f1}Shell ${c08}........ $f1$(get_shell)
+${c11}  ▉▉| ${f1}Terminal ${c08}..... $f1$term
+${c08}▉▉  | ${f1}Term Font ${c08}.... $f1$termfn
+${c12}  ▉▉|
+${c05}▉▉  | ${f1}Kernel ${c08}....... $f1$(get_kernel)
+${c13}  ▉▉| ${f1}Processor ${c08}.... $f1$(get_cpu)
+${c06}▉▉  | ${f1}Gpu ${c08}.......... $f1$(get_gpu)
+${c14}  ▉▉|
+${c01}▉▉  | ${f1}Disk ${c08}......... $f1$(get_disk)
+${c09}  ▉▉| 
+${c07}▉▉  | ${f1}Birthday ${c08}..... $f1$birthd
+${c15}  ▉▉| ${f1}Memory ${c08}....... $f1$(get_mem)
+
 EOF
